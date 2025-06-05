@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>任务7</title>
+  <style>
+    @font-face {
+      font-family: 'MFQiXiangTongNian';
+      src: url('MFQiXiangTongNian_Noncommercial-Regular.otf');
+    }
+    @font-face {
+      font-family: 'MFShuYan';
+      src: url('MFShuYan_Noncommercial-Regular.otf');
+    }
+ body {
+      font-family: 'MFShuYan', sans-serif;
+      background-image: url('BG.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      backdrop-filter: brightness(95%) saturate(110%) opacity(90%);
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+header {
+  background-color: white;
+  padding: 30px 0 10px;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  padding: 15px 0;
+  margin: 0;
+  font-size: 2.8em;
+  color: #2B9EF4; 
+  font-family: 'MFQiXiangTongNian', cursive;
+}
+h2 {
+  padding: 12px 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #F897B6;  
+  font-family: 'MFQiXiangTongNian', cursive;
+}
+    form {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-size: 1.1em;
+    }
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 2px solid #F897B6;
+      border-radius: 8px;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+  accent-color: #F897B6; 
+}
+ .section-title {
+      font-family: 'MFQiXiangTongNian';
+      font-size: 1.5em;
+      color: #2B9EF4;
+      margin-bottom: 15px;
+    }
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'MFShuYan', sans-serif;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    gap: 4px; 
+  }
+  .checkbox-group input[type="checkbox"] {
+    margin: 0; 
+    vertical-align: middle;
+  }
+ .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .radio-group label {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'MFShuYan', sans-serif;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    gap: 4px; 
+  }
+  .radio-group input[type="radio"] {
+    margin: 0; 
+    vertical-align: middle;
+  }
+label.select-label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'MFShuYan', sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+select.custom-select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #F897B6;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'MFShuYan';;
+    background-color: #fff;
+    color: #444;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+ select.custom-select:focus {
+    border-color: #2B9EF4;
+    box-shadow: 0 0 8px rgba(43, 158, 244, 0.3);
+    outline: none;
+  }
+button,
+input[type="submit"],
+input[type="reset"] {
+  margin-top: 20px; 
+  font-family: 'MFShuYan', sans-serif;
+  font-size: 1em;
+  background-color: #2B9EF4; 
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #1c7ec8; 
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+<header>
+<h1>2025Eclipse完整体演唱会应援准备</h1>
+<h2>✨ Capella！时隔16周Eclipse将再度合体！</h2>
+<h2> Eclipse需要听见你的声音！</h2>
+</header>
+
+  <form action="#">
+ <div class="group1">
+      <p class="section-title">👧🏻 基本信息</p>
+    <label>1️⃣昵称「Eclipse应该怎么称呼你」：
+      <input type="text" name="username">
+    </label>
+    <label>2️⃣暗号「仅你&Eclipse一起可见」：
+      <input type="password" name="password1">
+    </label>
+     <label>3️⃣确认暗号「绝对不能忘记」：
+      <input type="password" name="password"2>
+    </label>
+ </div>
+ <div class="group2">
+      <p class="section-title">🍭喜爱的成员与歌曲</p>
+    <div class="radio-group">
+    <label>4️⃣你最喜欢的ECLIPSE成员？</label>
+      <label><input type="radio" name="member" value="柳善宰"> 柳善宰</label>
+      <label><input type="radio" name="member" value="白仁赫"> 白仁赫</label>
+      <label><input type="radio" name="member" value="JAY"> JAY</label>
+      <label><input type="radio" name="member" value="贤秀"> 贤秀</label>
+    <div class="checkbox-group">
+    <label>5️⃣你最喜欢的OST？</label>
+      <div class="checkbox-item"> <input type="checkbox" id="rain" name="favorite-song" value="阵雨"> <label for="rain">阵雨</label></div> <div class="checkbox-item"> <input type="checkbox" id="runrun" name="favorite-song" value="春雪"> <label for="runrun">春雪</label></div>  <div class="checkbox-item"> <input type="checkbox" id="rain" name="favorite-song" value="RUN RUN"><label for="rain">RUN RUN</label></div> <div class="checkbox-item"> <input type="checkbox" id="youandi" name="favorite-song" value="You & I"> <label for="youandi">You & I</label> </div> <div class="checkbox-item"> <input type="checkbox" id="dream" name="favorite-song" value="Like A Dream"><label for="dream">Like A Dream</label> </div><div class="checkbox-item">  <input type="checkbox" id="did" name="favorite-song" value="I think I Did"> <label for="love">I think I Did</label></div></div>
+</div>
+ <label for="select1" class="select-label">6️⃣你最喜欢的小背跑舞台？</label>
+<select id="select1" name="select1" class="custom-select">
+  <option value="lucas-band-ver">@柳善宰at合体演唱会弹唱《阵雨》</option>
+  <option value="byx-seoul">边佑锡at首尔见面会演唱《阵雨》</option>
+  <option value="minnie-gidle">金米妮at(G)I-DLE演唱会演唱《Like A Dream》</option>
+  <option value="byx-mama">边佑锡atMAMA颁奖典礼演唱《阵雨》</option>
+  <option value="zb1-aaa">ZB1atAAA颁奖典礼演唱《Run Run》</option>
+  <option value="10cm-festival">10CM 音乐节现场演唱《春雪》</option>
+</select>
+<label for="select2t">7️⃣你最期待的演唱会环节？</label>
+<select id="select2" name="select2t" size="4" style="font-family: 'MFShuYan'; font-size: 1em;">
+  <option value="opening">开场合体</option>
+  <option value="music">16年金曲串烧</option>
+  <option value="medley">出道16年回忆视频</option>
+  <option value="encore">粉丝合唱安可</option>
+</select>
+ <div class="group3">
+      <p class="section-title">⚠️应援时刻到</p>
+<label for="textarea1" style="font-family: 'MFShuYan'; font-size: 1em;">8️⃣有没有什么想对 Eclipse 或善宰说的话</label><br>
+<textarea id="textarea1" name="textarea1" rows="6" cols="50" style="
+  font-family: 'MFShuYan', sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #F897B6;
+  background-color: #fffdfc;
+  resize: vertical;">善宰 is 👀ing!</textarea>
+<label>9️⃣请上传一张你为善宰设计的手幅或准备的应援图：
+     <input type="file" name="upload">
+    </label>
+</div>
+
+<input type="submit" value="准备好了吗➡️提交我的应援💌">
+<input type="reset" value="写错什么了吗➡️没关系！重新来过💗"">
+  </form>
+</body>
+</html>

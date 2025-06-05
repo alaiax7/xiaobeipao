@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>任务6</title>
+  <style>
+@font-face {
+  font-family: 'MFQiXiangTongNian';
+  src: url('fonts/MFQiXiangTongNian_Noncommercial-Regular.otf');
+}
+@font-face {
+  font-family: 'MFShuYan';
+  src: url('fonts/MFShuYan_Noncommercial-Regular.otf');
+}
+    body {
+      font-family: 'MFShuYan', sans-serif;
+      background-image: url('images/BG.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      backdrop-filter: brightness(95%);
+    }
+    h1 {
+      font-family: 'MFQiXiangTongNian';
+      color: #2B9EF4;
+      text-align: center;
+      padding: 30px 0 10px;
+    }
+.timeline-section {
+      margin: 20px 0;
+    }
+ .timeline-title {
+      font-family: 'MFQiXiangTongNian';
+      color: #F897B6;
+      margin-left: 30px;
+      font-size: 20px;
+    }
+.timeline-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 10px 30px;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 10px;
+}
+.timeline-item {
+  text-align: center;
+  width: 350px;
+  flex-shrink: 0;
+  font-family: 'MFShuYan', sans-serif;
+}
+.timeline-item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #F897B6; 
+  transition: transform 0.3s ease;
+}
+.timeline-item img:hover {
+  transform: scale(1.05);
+}
+.timeline-item p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333;
+}
+.lyrics-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 15px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  backdrop-filter: blur(4px); 
+}
+.lyrics-text {
+  flex: 1;
+  font-family: 'MFShuYan', sans-serif;
+  color: #333;
+  font-size: 25px;
+  line-height: 1.8;
+  text-align: center
+}
+.lyrics-text p {
+  margin-bottom: 10px;
+}
+.lyrics-img {
+  flex: 1;
+  text-align: right;
+}
+.lyrics-img img {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #F897B6;
+}
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #F897B6; 
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: 'MFQiXiangTongNian';
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.back-btn:hover {
+  background-color: #2B9EF4; 
+}
+.lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+.lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      border: 4px solid white;
+    }
+ </style>
+    
+</head>
+<body>
+  <h1>✨欢迎来到小背跑的世界</h1>
+<section class="timeline-section">
+  <h2 class="timeline-title">🌱“15年前，你还记得吗”</h2>
+  <div class="timeline-wrapper">
+    <div class="timeline-item">
+      <img src="images/umbrella.png" alt="小黄伞初遇">
+      <p>小黄伞下，小率初遇善宰...</p>
+    </div>
+    <div class="timeline-item">
+      <img src="images/life4cut.png" alt="人生四格">
+      <p>究竟是谁期待了很久的照片？小率还是善宰？</p>
+    </div>
+    <div class="timeline-item">
+      <img src="images/garden.png" alt="小率家">
+      <p>小率家的花园就是记忆最好的见证。</p>
+    </div>
+     <div class="timeline-item">
+      <img src="images/drink.png" alt="饮料">
+      <p>喝佑锡冰茶，翔小率人生！</p>
+    </div>
+      <div class="timeline-item">
+      <img src="images/pool.png" alt="泳池">
+      <p>耳机挡住的是没能听到的遗憾...</p>
+    </div>   
+  </div>
+</section>
+<section class="timeline-section">
+  <h2 class="timeline-title">🌸 “15年后，再遇见”</h2>
+  <div class="timeline-wrapper">
+    <div class="timeline-item">
+      <img src="images/hanjiang.png" alt="汉江大桥再遇">
+      <p>你不认识我吗？</p>
+      </div>
+    <div class="timeline-item">
+      <img src="images/photo.png" alt="照片callback">
+      <p>好像一样，好像又不一样?</p>
+    </div>
+    <div class="timeline-item">
+      <img src="images/together.png" alt="樱花林散步">
+      <p>即便人有可能丢失记忆，但发生过的事全是证明...</p>
+    </div>
+    <div class="timeline-item">
+      <img src="images/sakura.png" alt="樱花林捉花瓣">
+      <p>愿我的善宰/小率永永远远幸福！</p>
+    </div>
+    <div class="timeline-item">
+      <img src="images/wedding.png" alt="婚礼">
+      <p>全剧终。</p>
+    </div>
+  </div>
+</section>
+<section class="timeline-section">
+  <h2 class="timeline-title">🌸 彩蛋</h2>
+  <div class="lyrics-card">
+    <div class="lyrics-img">
+      <a href="https://www.bilibili.com/video/BV1t5B1YyEGr/?spm_id_from=333.337.search-card.all.click" target="_blank">
+        <img src="images/sudden rain.png" alt="阵雨">
+      </a>
+    </div>
+    <div class="lyrics-text">
+      <p>🎵 你是上天 给予的礼物</p>
+      <p>在这孤零零的世界里 我会守护你</p>
+      <p>🎵 虽然你就像某一天</p>
+      <p>突如其来的阵雨 那般降临</p>
+      <p>🎵 今天也试着呼唤你</p>
+      <p>我所珍视的人</p>
+      <a href="https://www.bilibili.com/video/BV1UD421P7vd" target="_blank">
+        <button class="back-btn">✨ 点击我或者图片都会有不一样的惊喜 ✨</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+        <img src="" alt="放大图像">
+    </div>
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+    document.querySelectorAll(".timeline-item img").forEach(img => {
+      img.addEventListener("click", (e) => {
+        if (!img.closest("a")) {
+          lightboxImg.src = img.src;
+          lightbox.style.display = "flex";
+        }
+      });
+    });
+    lightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
